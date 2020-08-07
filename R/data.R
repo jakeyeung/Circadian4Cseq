@@ -99,6 +99,13 @@
 #' 4Cseq objs #'
 #' @format Objects for 4Cseq
 #' \describe{
+#'   ...
+#' }
+"counts.long.merged.Robj"
+
+#' 4Cseq objs #'
+#' @format Objects for 4Cseq
+#' \describe{
 # ' RData large than >100 MB. If on github, then it won't have this .RData. Download here:
 # ' http://upnaesrv1.epfl.ch/JakeYeung_4CseqPaper_RData_Objects/fourcseq_objects_batch_3.RData
 #'   ...
