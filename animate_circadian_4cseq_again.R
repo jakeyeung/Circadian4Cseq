@@ -98,6 +98,7 @@ MakeAnimation <- function(jsub.orig, nf = 20, ks = 0, jfps = 20, vline = -28000,
 
 
 
+
 # Try to animate ----------------------------------------------------------
 
 
@@ -124,8 +125,8 @@ p.KO <- MakeAnimation(subset(counts.long.merged, sig == jsig & genotype == "Live
                       plot.base = file.path(outdir, "KO_plot"))
 
 
-print(p.WT)
-print(p.KO)
+# print(p.WT)
+# print(p.KO)
 
 # animate(p.WT, fps = 50, renderer = gifski_renderer())
 # animate(p.KO, fps = 50, renderer = gifski_renderer())
