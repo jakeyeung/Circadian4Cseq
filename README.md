@@ -17,7 +17,11 @@ loading and plotting data Check out the tutorial in
     # data can be loaded using data() or load("data/path_to_RData_object")
     # data(counts.long.merged.Robj)
 
+![](load_and_plot_data_files/figure-markdown_strict/unnamed-chunk-2-5.png)
+
 Tutorial for making movies of chromatin conformation over the 24-hour day
 -------------------------------------------------------------------------
 
 Check out tutorial in `animate_circadian_4cseq_again.md`
+
+![](gifs_outputs/WT_plot.fps.22.fixed_rotated.11.5.gif)
