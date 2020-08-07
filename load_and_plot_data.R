@@ -2,6 +2,7 @@
 # devtools::install_github("jakeyeung/Circadian4Cseq")
 
 
+
 # Jake Yeung
 # Date of Creation: 2019-11-30
 # File: ~/projects/Circadian4Cseq/load_and_plot_data.R
@@ -15,9 +16,9 @@ library(ggplot2)
 library(PhaseHSV)
 library(parallel)
 
-# for creating GIFs
-library(tweenr)
-library(gganimate)
+# # for creating GIFs
+# library(tweenr)
+# library(gganimate)
 
 
 # Get colors --------------------------------------------------------------
@@ -36,6 +37,8 @@ jposes <- c(0)
 
 
 # Load data  --------------------------------------------------------------
+
+load("data/Cry1.normmax.Inf.log.FALSE.nfrags.5.remove.auto.sig.2500.Robj.RData", v=T)
 
 jbaits <- c("Hoxd4", "Cry1", "Cry1_TSS", "Cry1_UP")
 posranges <- list(c(-15000, 15000), c(-29000, -19000), c(-31000, -22200), c(-36000, -29000))
@@ -59,11 +62,8 @@ posrange <- sublst[["posrange"]]
 
 jsig <- 2500
 
-load("data/Cry1.normmax.Inf.log.FALSE.nfrags.5.remove.auto.sig.2500.Robj.RData", v=T)
-
 
 counts.long.merged <- counts.long; rm(counts.long)
-
 counts.long.merged$LR <- sapply(counts.long.merged$pos, AddLR)
 
 counts.long.merged$genotype <- factor(as.character(counts.long.merged$genotype), levels = c("Liver_WT", "Liver_Cry1intronKO"))
